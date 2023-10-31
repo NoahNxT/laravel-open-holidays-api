@@ -2,10 +2,10 @@
 
 namespace NoahNxT\LaravelOpenHolidayApi\Resource;
 
-use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\ReturnsListOfOfficialSchoolHolidaysForGivenCountry;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\ReturnsListOfPublicHolidaysForGivenCountry;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\ReturnsListOfPublicHolidaysFromAllCountriesForGivenDate;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\ReturnsListOfSchoolHolidaysFromAllCountriesForGivenDate;
+use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\PublicHolidays;
+use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\PublicHolidaysByDate;
+use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\SchoolHolidays;
+use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\SchoolHolidaysByDate;
 use NoahNxT\LaravelOpenHolidayApi\Resource;
 use Saloon\Http\Response;
 
@@ -18,25 +18,26 @@ class Holidays extends Resource
      * @param  string  $validTo End of the date range
      * @param  string  $subdivisionCode Code of the subdivision or empty
      */
-    public function returnsListOfPublicHolidaysForGivenCountry(
+    public function publicHolidays(
         string $countryIsoCode,
         string $languageIsoCode,
         string $validFrom,
         string $validTo,
         string $subdivisionCode,
     ): Response {
-        return $this->connector->send(new ReturnsListOfPublicHolidaysForGivenCountry($countryIsoCode, $languageIsoCode, $validFrom, $validTo, $subdivisionCode));
+        return $this->connector->send(new PublicHolidays($countryIsoCode, $languageIsoCode, $validFrom, $validTo,
+            $subdivisionCode));
     }
 
     /**
      * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
      * @param  string  $date Date of interest
      */
-    public function returnsListOfPublicHolidaysFromAllCountriesForGivenDate(
+    public function publicHolidaysByDate(
         string $languageIsoCode,
         string $date,
     ): Response {
-        return $this->connector->send(new ReturnsListOfPublicHolidaysFromAllCountriesForGivenDate($languageIsoCode, $date));
+        return $this->connector->send(new PublicHolidaysByDate($languageIsoCode, $date));
     }
 
     /**
@@ -46,24 +47,24 @@ class Holidays extends Resource
      * @param  string  $validTo End of the date range
      * @param  string  $subdivisionCode Code of the subdivision or empty
      */
-    public function returnsListOfOfficialSchoolHolidaysForGivenCountry(
+    public function schoolHolidays(
         string $countryIsoCode,
         string $languageIsoCode,
         string $validFrom,
         string $validTo,
         string $subdivisionCode,
     ): Response {
-        return $this->connector->send(new ReturnsListOfOfficialSchoolHolidaysForGivenCountry($countryIsoCode, $languageIsoCode, $validFrom, $validTo, $subdivisionCode));
+        return $this->connector->send(new SchoolHolidays($countryIsoCode, $languageIsoCode, $validFrom, $validTo, $subdivisionCode));
     }
 
     /**
      * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
      * @param  string  $date Date of interest
      */
-    public function returnsListOfSchoolHolidaysFromAllCountriesForGivenDate(
+    public function schoolHolidaysByDate(
         string $languageIsoCode,
         string $date,
     ): Response {
-        return $this->connector->send(new ReturnsListOfSchoolHolidaysFromAllCountriesForGivenDate($languageIsoCode, $date));
+        return $this->connector->send(new SchoolHolidaysByDate($languageIsoCode, $date));
     }
 }

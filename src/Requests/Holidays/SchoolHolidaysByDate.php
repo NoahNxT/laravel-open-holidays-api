@@ -6,15 +6,15 @@ use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
 /**
- * Returns a list of public holidays from all countries for a given date.
+ * Returns a list of school holidays from all countries for a given date.
  */
-class ReturnsListOfPublicHolidaysFromAllCountriesForGivenDate extends Request
+class SchoolHolidaysByDate extends Request
 {
     protected Method $method = Method::GET;
 
     public function resolveEndpoint(): string
     {
-        return '/PublicHolidaysByDate';
+        return '/SchoolHolidaysByDate';
     }
 
     /**

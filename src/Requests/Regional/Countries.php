@@ -6,15 +6,15 @@ use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
 /**
- * Returns a list of all used languages
+ * Returns a list of all supported countries
  */
-class ReturnsListOfAllUsedLanguages extends Request
+class Countries extends Request
 {
     protected Method $method = Method::GET;
 
     public function resolveEndpoint(): string
     {
-        return '/Languages';
+        return '/Countries';
     }
 
     /**

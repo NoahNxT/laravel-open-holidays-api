@@ -6,15 +6,15 @@ use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
 /**
- * Returns statistical data about school holidays for a given country
+ * Returns statistical data about public holidays for a given country.
  */
-class ReturnsStatisticalDataAboutSchoolHolidaysForGivenCountry extends Request
+class StatisticsPublicHolidays extends Request
 {
     protected Method $method = Method::GET;
 
     public function resolveEndpoint(): string
     {
-        return '/Statistics/SchoolHolidays';
+        return '/Statistics/PublicHolidays';
     }
 
     /**

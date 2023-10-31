@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/noahnxt/laravel-open-holiday-api/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/noahnxt/laravel-open-holiday-api/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/noahnxt/laravel-open-holiday-api.svg?style=flat-square)](https://packagist.org/packages/noahnxt/laravel-open-holiday-api)
 
-A package to use the holidays API from the [Open Holiday API](https://www.openholidaysapi.org/).
+A package to use the holidays API from the [Open Holiday API](https://www.openholidaysapi.org/). ([Swagger](https://openholidaysapi.org/swagger/index.html))
 
 ## Installation
 

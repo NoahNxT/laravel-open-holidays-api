@@ -2,9 +2,9 @@
 
 namespace NoahNxT\LaravelOpenHolidayApi\Resource;
 
-use NoahNxT\LaravelOpenHolidayApi\Requests\Regional\ReturnsListOfAllSupportedCountries;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Regional\ReturnsListOfAllUsedLanguages;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Regional\ReturnsListOfRelevantSubdivisionsForSupportedCountryIfAny;
+use NoahNxT\LaravelOpenHolidayApi\Requests\Regional\Countries;
+use NoahNxT\LaravelOpenHolidayApi\Requests\Regional\Languages;
+use NoahNxT\LaravelOpenHolidayApi\Requests\Regional\Subdivisions;
 use NoahNxT\LaravelOpenHolidayApi\Resource;
 use Saloon\Http\Response;
 
@@ -13,27 +13,27 @@ class Regional extends Resource
     /**
      * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
      */
-    public function returnsListOfAllSupportedCountries(string $languageIsoCode): Response
+    public function countries(string $languageIsoCode): Response
     {
-        return $this->connector->send(new ReturnsListOfAllSupportedCountries($languageIsoCode));
+        return $this->connector->send(new Countries($languageIsoCode));
     }
 
     /**
      * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
      */
-    public function returnsListOfAllUsedLanguages(string $languageIsoCode): Response
+    public function languages(string $languageIsoCode): Response
     {
-        return $this->connector->send(new ReturnsListOfAllUsedLanguages($languageIsoCode));
+        return $this->connector->send(new Languages($languageIsoCode));
     }
 
     /**
      * @param  string  $countryIsoCode ISO 3166-1 code of the country
      * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
      */
-    public function returnsListOfRelevantSubdivisionsForSupportedCountryIfAny(
+    public function subdivisions(
         string $countryIsoCode,
         string $languageIsoCode,
     ): Response {
-        return $this->connector->send(new ReturnsListOfRelevantSubdivisionsForSupportedCountryIfAny($countryIsoCode, $languageIsoCode));
+        return $this->connector->send(new Subdivisions($countryIsoCode, $languageIsoCode));
     }
 }

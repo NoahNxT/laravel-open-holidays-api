@@ -8,7 +8,7 @@ use Saloon\Http\Request;
 /**
  * Returns list of official school holidays for a given country
  */
-class ReturnsListOfOfficialSchoolHolidaysForGivenCountry extends Request
+class PublicHolidays extends Request
 {
     protected Method $method = Method::GET;
 
