@@ -18,8 +18,16 @@ composer require noahnxt/laravel-open-holiday-api
 ## Usage
 
 ```php
-$laravelOpenHolidayApi = new NoahNxT\LaravelOpenHolidayApi();
-echo $laravelOpenHolidayApi->echoPhrase('Hello, NoahNxT!');
+$holidayApi = new \NoahNxT\LaravelOpenHolidayApi\HolidayApi();
+$holidays = $holidayApi
+    ->holidays()
+    ->returnsListOfOfficialSchoolHolidaysForGivenCountry(
+        'BE',
+        'NL',
+        '2023-01-01',
+        '2023-12-31',
+        'NL-BE'
+        );
 ```
 
 ## Testing
