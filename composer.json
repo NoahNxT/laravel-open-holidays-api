@@ -1,6 +1,6 @@
 {
     "name": "noahnxt/laravel-open-holiday-api",
-    "description": "This is my package laravel-open-holiday-api",
+    "description": "A Laravel wrapper for the Open Holiday API",
     "keywords": [
         "NoahNxT",
         "laravel",
@@ -8,6 +8,7 @@
     ],
     "homepage": "https://github.com/noahnxt/laravel-open-holiday-api",
     "license": "MIT",
+    "version": "0.0.1",
     "authors": [
         {
             "name": "Noah Gillard",
