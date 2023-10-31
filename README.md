@@ -1,4 +1,4 @@
-# This is my package laravel-open-holiday-api
+# Laravel package for the Open Holiday API
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/noahnxt/laravel-open-holiday-api.svg?style=flat-square)](https://packagist.org/packages/noahnxt/laravel-open-holiday-api)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/noahnxt/laravel-open-holiday-api/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/noahnxt/laravel-open-holiday-api/actions?query=workflow%3Arun-tests+branch%3Amain)
