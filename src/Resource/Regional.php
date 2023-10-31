@@ -10,33 +10,30 @@ use Saloon\Http\Response;
 
 class Regional extends Resource
 {
-	/**
-	 * @param string $languageIsoCode ISO-639-1 code of a language or empty
-	 */
-	public function returnsListOfAllSupportedCountries(string $languageIsoCode): Response
-	{
-		return $this->connector->send(new ReturnsListOfAllSupportedCountries($languageIsoCode));
-	}
+    /**
+     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
+     */
+    public function returnsListOfAllSupportedCountries(string $languageIsoCode): Response
+    {
+        return $this->connector->send(new ReturnsListOfAllSupportedCountries($languageIsoCode));
+    }
 
+    /**
+     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
+     */
+    public function returnsListOfAllUsedLanguages(string $languageIsoCode): Response
+    {
+        return $this->connector->send(new ReturnsListOfAllUsedLanguages($languageIsoCode));
+    }
 
-	/**
-	 * @param string $languageIsoCode ISO-639-1 code of a language or empty
-	 */
-	public function returnsListOfAllUsedLanguages(string $languageIsoCode): Response
-	{
-		return $this->connector->send(new ReturnsListOfAllUsedLanguages($languageIsoCode));
-	}
-
-
-	/**
-	 * @param string $countryIsoCode ISO 3166-1 code of the country
-	 * @param string $languageIsoCode ISO-639-1 code of a language or empty
-	 */
-	public function returnsListOfRelevantSubdivisionsForSupportedCountryIfAny(
-		string $countryIsoCode,
-		string $languageIsoCode,
-	): Response
-	{
-		return $this->connector->send(new ReturnsListOfRelevantSubdivisionsForSupportedCountryIfAny($countryIsoCode, $languageIsoCode));
-	}
+    /**
+     * @param  string  $countryIsoCode ISO 3166-1 code of the country
+     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
+     */
+    public function returnsListOfRelevantSubdivisionsForSupportedCountryIfAny(
+        string $countryIsoCode,
+        string $languageIsoCode,
+    ): Response {
+        return $this->connector->send(new ReturnsListOfRelevantSubdivisionsForSupportedCountryIfAny($countryIsoCode, $languageIsoCode));
+    }
 }
