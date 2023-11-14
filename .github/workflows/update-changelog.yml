@@ -1,8 +1,9 @@
 name: "Update Changelog"
 
 on:
-  release:
-    types: [released]
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
 
 permissions:
   contents: write
