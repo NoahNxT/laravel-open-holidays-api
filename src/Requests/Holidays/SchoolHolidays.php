@@ -6,7 +6,7 @@ use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
 /**
- * Returns list of public holidays for a given country
+ * Returns list of official school holidays for a given country
  */
 class SchoolHolidays extends Request
 {
@@ -14,7 +14,7 @@ class SchoolHolidays extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/PublicHolidays';
+        return '/SchoolHolidays';
     }
 
     /**

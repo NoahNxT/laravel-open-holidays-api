@@ -21,7 +21,7 @@ composer require noahnxt/laravel-open-holiday-api
 $holidayApi = new \NoahNxT\LaravelOpenHolidayApi\HolidayApi();
 $holidays = $holidayApi
     ->holidays()
-    ->returnsListOfOfficialSchoolHolidaysForGivenCountry(
+    ->publicHolidays(
         'BE',
         'NL',
         '2023-01-01',
