@@ -1,11 +1,11 @@
 <?php
 
-namespace NoahNxT\LaravelOpenHolidayApi\Resource;
+namespace NoahNxT\LaravelOpenHolidaysApi\Resource;
 
-use NoahNxT\LaravelOpenHolidayApi\Requests\Regional\Countries;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Regional\Languages;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Regional\Subdivisions;
-use NoahNxT\LaravelOpenHolidayApi\Resource;
+use NoahNxT\LaravelOpenHolidaysApi\Requests\Regional\Countries;
+use NoahNxT\LaravelOpenHolidaysApi\Requests\Regional\Languages;
+use NoahNxT\LaravelOpenHolidaysApi\Requests\Regional\Subdivisions;
+use NoahNxT\LaravelOpenHolidaysApi\Resource;
 use Saloon\Http\Response;
 
 class Regional extends Resource

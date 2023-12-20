@@ -1,9 +1,9 @@
 <?php
 
-namespace NoahNxT\LaravelOpenHolidayApi\Tests;
+namespace NoahNxT\LaravelOpenHolidaysApi\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use NoahNxT\LaravelOpenHolidayApi\LaravelOpenHolidayApiServiceProvider;
+use NoahNxT\LaravelOpenHolidaysApi\LaravelOpenHolidaysApiServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -20,7 +20,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            LaravelOpenHolidayApiServiceProvider::class,
+            LaravelOpenHolidaysApiServiceProvider::class,
         ];
     }
 

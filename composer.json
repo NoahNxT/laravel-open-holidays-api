@@ -1,12 +1,12 @@
 {
-    "name": "noahnxt/laravel-open-holiday-api",
+    "name": "noahnxt/laravel-open-holidays-api",
     "description": "A Laravel wrapper for the Open Holiday API",
     "keywords": [
         "NoahNxT",
         "laravel",
-        "laravel-open-holiday-api"
+        "laravel-open-holidays-api"
     ],
-    "homepage": "https://github.com/noahnxt/laravel-open-holiday-api",
+    "homepage": "https://github.com/noahnxt/laravel-open-holidays-api",
     "license": "MIT",
     "version": "0.0.4",
     "authors": [
@@ -37,18 +37,18 @@
     },
     "autoload": {
         "psr-4": {
-            "NoahNxT\\LaravelOpenHolidayApi\\": "src/"
+            "NoahNxT\\LaravelOpenHolidaysApi\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NoahNxT\\LaravelOpenHolidayApi\\Tests\\": "tests/",
+            "NoahNxT\\LaravelOpenHolidaysApi\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-laravel-open-holiday-api --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-laravel-open-holidays-api --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -74,10 +74,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "NoahNxT\\LaravelOpenHolidayApi\\LaravelOpenHolidayApiServiceProvider"
+                "NoahNxT\\LaravelOpenHolidaysApi\\LaravelOpenHolidaysApiServiceProvider"
             ],
             "aliases": {
-                "LaravelOpenHolidayApi": "NoahNxT\\LaravelOpenHolidayApi\\Facades\\LaravelOpenHolidayApi"
+                "LaravelOpenHolidaysApi": "NoahNxT\\LaravelOpenHolidaysApi\\Facades\\LaravelOpenHolidaysApi"
             }
         }
     },

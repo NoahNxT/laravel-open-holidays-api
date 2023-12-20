@@ -1,10 +1,10 @@
 <?php
 
-namespace NoahNxT\LaravelOpenHolidayApi;
+namespace NoahNxT\LaravelOpenHolidaysApi;
 
-use NoahNxT\LaravelOpenHolidayApi\Resource\Holidays;
-use NoahNxT\LaravelOpenHolidayApi\Resource\Regional;
-use NoahNxT\LaravelOpenHolidayApi\Resource\Statistics;
+use NoahNxT\LaravelOpenHolidaysApi\Resource\Holidays;
+use NoahNxT\LaravelOpenHolidaysApi\Resource\Regional;
+use NoahNxT\LaravelOpenHolidaysApi\Resource\Statistics;
 use Saloon\Http\Connector;
 
 /**
@@ -12,7 +12,7 @@ use Saloon\Http\Connector;
  *
  * Open Data API for public and school holidays
  */
-class HolidayApi extends Connector
+class OpenHolidaysApi extends Connector
 {
     public function resolveBaseUrl(): string
     {

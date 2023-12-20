@@ -1,12 +1,12 @@
 <?php
 
-namespace NoahNxT\LaravelOpenHolidayApi\Resource;
+namespace NoahNxT\LaravelOpenHolidaysApi\Resource;
 
-use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\PublicHolidays;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\PublicHolidaysByDate;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\SchoolHolidays;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Holidays\SchoolHolidaysByDate;
-use NoahNxT\LaravelOpenHolidayApi\Resource;
+use NoahNxT\LaravelOpenHolidaysApi\Requests\Holidays\PublicHolidays;
+use NoahNxT\LaravelOpenHolidaysApi\Requests\Holidays\PublicHolidaysByDate;
+use NoahNxT\LaravelOpenHolidaysApi\Requests\Holidays\SchoolHolidays;
+use NoahNxT\LaravelOpenHolidaysApi\Requests\Holidays\SchoolHolidaysByDate;
+use NoahNxT\LaravelOpenHolidaysApi\Resource;
 use Saloon\Http\Response;
 
 class Holidays extends Resource

@@ -1,6 +1,6 @@
 <?php
 
-namespace NoahNxT\LaravelOpenHolidayApi;
+namespace NoahNxT\LaravelOpenHolidaysApi;
 
 use Saloon\Http\Connector;
 

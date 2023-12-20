@@ -1,11 +1,11 @@
 <?php
 
-namespace NoahNxT\LaravelOpenHolidayApi;
+namespace NoahNxT\LaravelOpenHolidaysApi;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class LaravelOpenHolidayApiServiceProvider extends PackageServiceProvider
+class LaravelOpenHolidaysApiServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -15,6 +15,6 @@ class LaravelOpenHolidayApiServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-open-holiday-api');
+            ->name('laravel-open-holidays-api');
     }
 }

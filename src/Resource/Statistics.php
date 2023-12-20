@@ -1,10 +1,10 @@
 <?php
 
-namespace NoahNxT\LaravelOpenHolidayApi\Resource;
+namespace NoahNxT\LaravelOpenHolidaysApi\Resource;
 
-use NoahNxT\LaravelOpenHolidayApi\Requests\Statistics\StatisticsPublicHolidays;
-use NoahNxT\LaravelOpenHolidayApi\Requests\Statistics\StatisticsSchoolHolidays;
-use NoahNxT\LaravelOpenHolidayApi\Resource;
+use NoahNxT\LaravelOpenHolidaysApi\Requests\Statistics\StatisticsPublicHolidays;
+use NoahNxT\LaravelOpenHolidaysApi\Requests\Statistics\StatisticsSchoolHolidays;
+use NoahNxT\LaravelOpenHolidaysApi\Resource;
 use Saloon\Http\Response;
 
 class Statistics extends Resource

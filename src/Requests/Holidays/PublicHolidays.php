@@ -1,6 +1,6 @@
 <?php
 
-namespace NoahNxT\LaravelOpenHolidayApi\Requests\Holidays;
+namespace NoahNxT\LaravelOpenHolidaysApi\Requests\Holidays;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;

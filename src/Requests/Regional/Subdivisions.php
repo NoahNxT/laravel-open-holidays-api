@@ -1,6 +1,6 @@
 <?php
 
-namespace NoahNxT\LaravelOpenHolidayApi\Requests\Regional;
+namespace NoahNxT\LaravelOpenHolidaysApi\Requests\Regional;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;

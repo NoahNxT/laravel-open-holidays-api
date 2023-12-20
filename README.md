@@ -18,7 +18,7 @@ composer require noahnxt/laravel-open-holiday-api
 ## Usage
 
 ```php
-$holidayApi = new \NoahNxT\LaravelOpenHolidayApi\HolidayApi();
+$holidayApi = new \NoahNxT\LaravelOpenHolidaysApi\OpenHolidaysApi();
 $holidays = $holidayApi
     ->holidays()
     ->publicHolidays(
