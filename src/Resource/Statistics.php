@@ -10,8 +10,8 @@ use Saloon\Http\Response;
 class Statistics extends Resource
 {
     /**
-     * @param  string  $countryIsoCode ISO 3166-1 code of the country
-     * @param  string  $subdivisionCode Code of the subdivision or empty
+     * @param  string  $countryIsoCode  ISO 3166-1 code of the country
+     * @param  string  $subdivisionCode  Code of the subdivision or empty
      */
     public function statisticsPublicHolidays(
         string $countryIsoCode,
@@ -21,8 +21,8 @@ class Statistics extends Resource
     }
 
     /**
-     * @param  string  $countryIsoCode ISO 3166-1 code of the country
-     * @param  string  $subdivisionCode Code of the subdivision or empty
+     * @param  string  $countryIsoCode  ISO 3166-1 code of the country
+     * @param  string  $subdivisionCode  Code of the subdivision or empty
      */
     public function statisticsSchoolHolidays(
         string $countryIsoCode,

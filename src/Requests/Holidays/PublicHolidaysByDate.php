@@ -18,14 +18,13 @@ class PublicHolidaysByDate extends Request
     }
 
     /**
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
-     * @param  string  $date Date of interest
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
+     * @param  string  $date  Date of interest
      */
     public function __construct(
         protected string $languageIsoCode,
         protected string $date,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

@@ -12,11 +12,11 @@ use Saloon\Http\Response;
 class Holidays extends Resource
 {
     /**
-     * @param  string  $countryIsoCode ISO 3166-1 code of the country
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
-     * @param  string  $validFrom Start of the date range
-     * @param  string  $validTo End of the date range
-     * @param  string  $subdivisionCode Code of the subdivision or empty
+     * @param  string  $countryIsoCode  ISO 3166-1 code of the country
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
+     * @param  string  $validFrom  Start of the date range
+     * @param  string  $validTo  End of the date range
+     * @param  string  $subdivisionCode  Code of the subdivision or empty
      */
     public function publicHolidays(
         string $countryIsoCode,
@@ -30,8 +30,8 @@ class Holidays extends Resource
     }
 
     /**
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
-     * @param  string  $date Date of interest
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
+     * @param  string  $date  Date of interest
      */
     public function publicHolidaysByDate(
         string $languageIsoCode,
@@ -41,11 +41,11 @@ class Holidays extends Resource
     }
 
     /**
-     * @param  string  $countryIsoCode ISO 3166-1 code of the country
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
-     * @param  string  $validFrom Start of the date range
-     * @param  string  $validTo End of the date range
-     * @param  string  $subdivisionCode Code of the subdivision or empty
+     * @param  string  $countryIsoCode  ISO 3166-1 code of the country
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
+     * @param  string  $validFrom  Start of the date range
+     * @param  string  $validTo  End of the date range
+     * @param  string  $subdivisionCode  Code of the subdivision or empty
      */
     public function schoolHolidays(
         string $countryIsoCode,
@@ -58,8 +58,8 @@ class Holidays extends Resource
     }
 
     /**
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
-     * @param  string  $date Date of interest
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
+     * @param  string  $date  Date of interest
      */
     public function schoolHolidaysByDate(
         string $languageIsoCode,

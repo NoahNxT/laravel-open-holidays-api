@@ -18,12 +18,11 @@ class Languages extends Request
     }
 
     /**
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
      */
     public function __construct(
         protected string $languageIsoCode,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

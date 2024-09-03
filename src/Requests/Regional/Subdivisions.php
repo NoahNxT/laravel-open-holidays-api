@@ -18,14 +18,13 @@ class Subdivisions extends Request
     }
 
     /**
-     * @param  string  $countryIsoCode ISO 3166-1 code of the country
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
+     * @param  string  $countryIsoCode  ISO 3166-1 code of the country
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
      */
     public function __construct(
         protected string $countryIsoCode,
         protected string $languageIsoCode,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

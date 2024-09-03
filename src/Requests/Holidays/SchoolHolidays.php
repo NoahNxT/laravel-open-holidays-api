@@ -18,11 +18,11 @@ class SchoolHolidays extends Request
     }
 
     /**
-     * @param  string  $countryIsoCode ISO 3166-1 code of the country
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
-     * @param  string  $validFrom Start of the date range
-     * @param  string  $validTo End of the date range
-     * @param  string  $subdivisionCode Code of the subdivision or empty
+     * @param  string  $countryIsoCode  ISO 3166-1 code of the country
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
+     * @param  string  $validFrom  Start of the date range
+     * @param  string  $validTo  End of the date range
+     * @param  string  $subdivisionCode  Code of the subdivision or empty
      */
     public function __construct(
         protected string $countryIsoCode,
@@ -30,8 +30,7 @@ class SchoolHolidays extends Request
         protected string $validFrom,
         protected string $validTo,
         protected string $subdivisionCode,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

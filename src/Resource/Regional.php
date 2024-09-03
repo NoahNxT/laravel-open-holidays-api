@@ -11,7 +11,7 @@ use Saloon\Http\Response;
 class Regional extends Resource
 {
     /**
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
      */
     public function countries(string $languageIsoCode): Response
     {
@@ -19,7 +19,7 @@ class Regional extends Resource
     }
 
     /**
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
      */
     public function languages(string $languageIsoCode): Response
     {
@@ -27,8 +27,8 @@ class Regional extends Resource
     }
 
     /**
-     * @param  string  $countryIsoCode ISO 3166-1 code of the country
-     * @param  string  $languageIsoCode ISO-639-1 code of a language or empty
+     * @param  string  $countryIsoCode  ISO 3166-1 code of the country
+     * @param  string  $languageIsoCode  ISO-639-1 code of a language or empty
      */
     public function subdivisions(
         string $countryIsoCode,
